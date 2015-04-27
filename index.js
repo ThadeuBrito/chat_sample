@@ -5,9 +5,9 @@ var app      = express();
 var server   = http.Server(app);
 
 server.listen(3000, function() {
-  console.log('listening on *:3000');
+  console.log('listening on localhost:3000');
 });
 
 app.get('/', function(req, res) {
-  res.send('<h1>Hello World!</h1>')
+  res.sendFile(__dirname + '/index.html')
 });
