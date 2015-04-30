@@ -1,13 +1,26 @@
 #messages {
-  height: 200px;
+  height: 250px;
   overflow: overlay;
   padding: 10px 20px;
   margin-bottom: 15px;
   border-bottom: 1px solid #eaeaea;
 }
 
+#messages li {
+  color: #949494;
+}
+
 .no-margin {
   margin: 0;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 #logo-header {
@@ -17,7 +30,7 @@
   cursor: inherit;
 }
 
-.container {
+.main-box {
   border: 1px solid #D3D3D3;
   border-radius: 5px;
   overflow: hidden;

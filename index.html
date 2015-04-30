@@ -11,22 +11,23 @@
   </head>
   <body>
     <div class="button button-primary" id="logo-header" href="">chat.io</div>
-    <div class="container">
 
-        <div class="messages-column">
-          <div class="top-box">message box</div>
-          <ul id="messages"></ul>
-          <form class="new-message-form">
-            <input class="u-full-width" id="new-message-field" type="text" autocomplete="off"></input>
-          </form>
-        </div>
+    <div class="container main-box">
 
-        <div class="users-column">
-          <div class="top-box">users</div>
-        </div>
+      <div class="messages-column">
+        <div class="top-box">message box</div>
+        <ul id="messages"></ul>
+        <form class="new-message-form">
+          <input class="u-full-width" id="new-message-field" type="text" autocomplete="off"></input>
+        </form>
+      </div>
+
+      <div class="users-column">
+        <div class="top-box">users</div>
+      </div>
 
     </div>
-  </body>
+ </body>
 
   <script src="/socket.io/socket.io.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
