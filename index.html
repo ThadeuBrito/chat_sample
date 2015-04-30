@@ -12,25 +12,19 @@
   <body>
     <div class="button button-primary" id="logo-header" href="">chat.io</div>
     <div class="container">
-      <div class="row">
-        <div class="ten columns">
-        <h1>Heading</h1>
-        <ul id="messages"></ul>
-        <form class="new-message-form">
-          <div class="row">
-            <div class="ten columns">
-              <input class="u-full-width" id="new-message-field" type="text" autocomplete="off"></input>
-            </div>
-            <div class="two columns">
-              <input class="button-primary" type="submit" value="Submit">
-            </div>
-          </div>
-        </form>
-      </div>
 
-      <div class="two columns">
-        <h4>Users</h4>
-      </div>
+        <div class="messages-column">
+          <div class="top-box">message box</div>
+          <ul id="messages"></ul>
+          <form class="new-message-form">
+            <input class="u-full-width" id="new-message-field" type="text" autocomplete="off"></input>
+          </form>
+        </div>
+
+        <div class="users-column">
+          <div class="top-box">users</div>
+        </div>
+
     </div>
   </body>
 
