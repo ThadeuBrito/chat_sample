@@ -6,6 +6,18 @@ $('.new-message-form').submit(function(){
   return false;
 });
 
-socket.on('chat message', function(msg){
+function addMessage(msg) {
   $('#messages').append($('<li>').text(msg));
+}
+
+socket.on('chat message', function(msg){
+  addMessage(msg);
+});
+
+socket.on('new user logged', function(username){
+  addMessage(username + ' logged.');
+});
+
+socket.on('user disconnected', function(username){
+  addMessage(username + ' disconnected.');
 });
