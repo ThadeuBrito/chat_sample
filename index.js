@@ -12,6 +12,10 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html')
 });
 
+app.get('/room', function(req, res) {
+  res.sendFile(__dirname + '/room.html')
+});
+
 io.on('connection', function(socket) {
 
   socket.broadcast.emit('new user logged', 'user');

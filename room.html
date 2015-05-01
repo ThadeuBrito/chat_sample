@@ -12,20 +12,21 @@
   <body>
     <div class="button button-primary" id="logo-header" href="">chat.io</div>
 
-    <div class="container">
-      <h2 class="text-center">Welcome</h2>
-      <h5 class="text-center">Put your name to enjoy</h5>
-      <div class="row">
-        <div class="four columns">&nbsp</div>
-        <div class="four columns">
-          <form class="new-user">
-            <input class="u-full-width" id="new-user-field" type="text" autocomplete="off"></input>
-          </form>
-        </div>
-        <div class="four columns">&nbsp</div>
-      </div>
-    </div>
+    <div class="container main-box">
 
+      <div class="messages-column">
+        <div class="top-box">message box</div>
+        <ul id="messages"></ul>
+        <form class="new-message-form">
+          <input class="u-full-width" id="new-message-field" type="text" autocomplete="off"></input>
+        </form>
+      </div>
+
+      <div class="users-column">
+        <div class="top-box">users</div>
+      </div>
+
+    </div>
  </body>
 
   <script src="/socket.io/socket.io.js"></script>
